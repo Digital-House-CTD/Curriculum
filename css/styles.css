@@ -1,0 +1,246 @@
+@font-face {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    src: url(../resources/fonts/GIL_____.TTF);
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../resources/fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+    font-weight: 500;
+
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1em;
+}
+
+li{
+    display: flex;
+    align-items: center;
+
+}
+i, li::before{
+    margin-right: 1em;
+    margin-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+
+/*Header*/
+header>section.title{
+    background-image: url(../resources/img/headerbackground.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    text-align: left;
+    height: 21rem;
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-left: 27%;
+
+}
+
+
+.capital-letter-title, .body-title {
+    font-size:2.7em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight:600;
+}
+.capital-letter-title{
+    color: #1a1a1a;
+}
+span.body-title{
+    color: #FCB75E;
+    
+}
+span.body-title:nth-child(2){
+    color: #393185;
+
+}
+span.body-title:nth-child(3n){
+    color: #6699ff;
+
+}
+span.body-title:last-child{
+    color: #FF7581;
+
+}
+
+.subtitle-head {
+    padding-top: 0.25em;
+    font-weight: lighter;
+    color: #808080;
+    font-size: 2.6em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/*Main Menu*/
+main{
+    display: flex;
+    align-items: baseline;
+}
+.main-menu>ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-menu li{
+    padding-left: 2rem;
+    margin-top: 1em;
+    
+}
+.main-menu>ul>a:not(:first-child)>li::before {
+    content: "●";
+}
+
+/*Aside*/
+div.shape-aside{
+    margin-top: 2em;
+    background-color: #F6F4EF;
+    border-radius: 50% 50% 0 0;
+    width: 27.8em;
+    height: 20em;
+    position: absolute;
+    z-index:  -1 ;
+
+}
+aside {
+    margin-top: 8em;
+    padding: 0 3rem;
+    background-color: #F6F4EF;
+    border-radius: 20% 20% 0 0;
+
+}
+.section-title{
+    font-weight: 600;
+    margin-bottom: 1.3em;
+    margin-top: 0.8em;
+}
+#contacto{
+    padding-top: 2em;
+}
+
+.section-title::after{
+    content: '······································●';
+    width: 20px;
+    display: block;
+    line-height: 0.1em;
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+/*Lista idiomas*/
+li.ingles::before {
+    margin-right: 1em;
+    width: 1em;
+    height: 1em;
+    content: " ";
+    background: url(../resources/img/ef\ set.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+
+}
+li.español::before {
+    margin-right: 1em;
+    width: 1em;
+    height: 1em;
+    content: " ";
+    background: url(../resources/img/arg.png);
+    background-size: 1em;
+    background-repeat: no-repeat;
+}
+
+
+/*Lista habilidades*/
+
+ul.skills li:first-child:before {
+    content: '● ';
+    color: #CB6CE6;
+}
+ul.skills li:nth-child(2):before {
+    content: '● ';
+    color: #F3C847;
+}
+ul.skills li:nth-child(3):before {
+    content: '● ';
+    color: #CB6CE6;
+}
+ul.skills li:nth-child(4):before {
+    content: '● ';
+    color: #8FE948;
+}
+ul.skills li:nth-child(5):before {
+    content: '● ';
+    color: #9FBAFA;
+}
+ul.skills li:last-child:before {
+    content: '● ';
+    color: #EC768D;
+}
+
+#habilidades{
+    padding-bottom: 19em;
+}
+
+/*Article*/
+article{
+    margin-top: 0.8em;
+    padding-left: 4em;
+}
+.container-right{
+    display: flex;
+    align-items: baseline;
+}
+dl.container-right{
+    padding-bottom: 1.2em;
+}
+.year{
+    padding-left: 2em;
+    text-align: right;
+    width: 8em;
+}
+.detail{
+    padding-left: 4em;
+    padding-right: 2em;
+    width: 42em;
+}
+.detail-title{
+    font-weight: 600;
+    font-size: 1.5em;
+}
+.detail-subtitle{
+    font-style: italic;
+    padding: 0.1em 0 0.5em 0;
+    letter-spacing: 0.1em;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.detail ul {
+    padding-top: 0.5em;
+    padding-left: 1em;
+}
+.detail-list{
+    line-height: 0.8em;
+}
+.detail li::before {
+    content: '● ';
+    color: #CB6CE6;
+}
+
+
+/*Footer*/
+footer{
+    height: 2em;
+    background-color: #1a1a1a;
+}
