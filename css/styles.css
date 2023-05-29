@@ -36,6 +36,15 @@ i, li::before{
 
 
 /*Header*/
+
+.logo{
+    height: 439px;
+    width: 355px;
+    position: absolute;
+    top: -18%;
+    left: 80.5%;
+    transform: scaleX(-1);
+}
 header>section.title{
     background-image: url(../resources/img/headerbackground.png);
     background-position: center;
@@ -47,7 +56,7 @@ header>section.title{
     flex-direction: column;
     padding-top: 8%;
     padding-left: 27%;
-
+    z-index: -1;
 }
 
 
@@ -84,7 +93,15 @@ span.body-title:last-child{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
-
+.subtitle-head::after{
+    content: '······································●';
+    width: 20px;
+    display: block;
+    line-height: 0.1em;
+    letter-spacing: 0.25em;
+    font-size: 0.7em;
+    color: #FF9933;
+}
 /*Main Menu*/
 main{
     display: flex;
@@ -207,13 +224,33 @@ dl.container-right{
 }
 .year{
     padding-left: 2em;
+    padding-right: 2em;
     text-align: right;
-    width: 8em;
+    width: 10em;
 }
 .detail{
-    padding-left: 4em;
+    padding-left: 2em;
     padding-right: 2em;
     width: 42em;
+    border-style: none none none dotted;
+    border-width: 2px;
+}
+
+.detail::before{
+    content: '●';
+    width: 20px;
+    position: relative;
+    right: 2.35em;
+    top: -0.45em;
+    line-height: 0.2em;
+
+}
+.detail::after{
+    content: '●';
+    width: 20px;
+    position: relative;
+    right: 2.35em;
+    top: 0.5em;
 }
 .detail-title{
     font-weight: 600;
