@@ -54,7 +54,7 @@ header>section.title{
     height: 21rem;
     display: flex;
     flex-direction: column;
-    padding-top: 8%;
+    padding-top: 5%;
     padding-left: 27%;
     z-index: -1;
 }
@@ -120,23 +120,32 @@ main{
 .main-menu>ul>a:not(:first-child)>li::before {
     content: "●";
 }
+nav {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 10;
+}
 
 /*Aside*/
 div.shape-aside{
     margin-top: 2em;
     background-color: #F6F4EF;
     border-radius: 50% 50% 0 0;
-    width: 27.8em;
+    width: 27.8rem;
     height: 20em;
     position: absolute;
     z-index:  -1 ;
+    left: -1px;
 
 }
 aside {
     margin-top: 8em;
-    padding: 0 3rem;
+    padding: 0 3.07rem;
     background-color: #F6F4EF;
     border-radius: 20% 20% 0 0;
+    width: 27.8rem;
+
 
 }
 .section-title{
@@ -145,7 +154,7 @@ aside {
     margin-top: 0.8em;
 }
 #contacto{
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .section-title::after{
@@ -233,12 +242,12 @@ dl.container-right{
     padding-right: 2em;
     width: 42em;
     border-style: none none none dotted;
-    border-width: 2px;
+    border-width: 1.5px;
 }
 
 .detail::before{
     content: '●';
-    width: 20px;
+    width: 16px;
     position: relative;
     right: 2.35em;
     top: -0.45em;
